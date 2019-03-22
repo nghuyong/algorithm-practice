@@ -6,9 +6,11 @@
 """
 
 
-def replaceSpace(s):
-    """
-    :param s: 输入字符串
-    :return: 替换空格以后输出的字符串
-    """
-    return s.replace(' ', '%20')
+class Solution:
+
+    def replaceSpace(self, s):
+        """
+        :param s: 输入字符串
+        :return: 替换空格以后输出的字符串
+        """
+        return s.replace(' ', '%20')

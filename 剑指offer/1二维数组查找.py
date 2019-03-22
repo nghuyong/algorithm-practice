@@ -6,23 +6,25 @@
 """
 
 
-def find(target, array):
-    """
-    :param target: 查找的目标数字
-    :param array: 待查找的数组
-    :return: True/False
-    """
-    if not array:
-        return None
-    rows = len(array)
-    cols = len(array[0])
-    x, y = 0, cols - 1
-    while 0 <= x < rows and 0 <= y < cols:
-        cur_val = array[x][y]
-        if cur_val == target:
-            return True
-        elif cur_val > target:
-            y -= 1
-        else:
-            x += 1
-    return False
+class Solution:
+
+    def find(self, target, array):
+        """
+        :param target: 查找的目标数字
+        :param array: 待查找的数组
+        :return: True/False
+        """
+        if not array:
+            return None
+        rows = len(array)
+        cols = len(array[0])
+        x, y = 0, cols - 1
+        while 0 <= x < rows and 0 <= y < cols:
+            cur_val = array[x][y]
+            if cur_val == target:
+                return True
+            elif cur_val > target:
+                y -= 1
+            else:
+                x += 1
+        return False
