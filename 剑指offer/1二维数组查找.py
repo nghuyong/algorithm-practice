@@ -21,7 +21,7 @@ def find(target, array):
         cur_val = array[x][y]
         if cur_val == target:
             return True
-        elif cur_val < target:
+        elif cur_val > target:
             y -= 1
         else:
             x += 1
