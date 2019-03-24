@@ -8,7 +8,7 @@
 class Solution:
     def jumpFloor(self, number):
         """
-        :param number: 台阶树木
+        :param number: 台阶数
         :return: 跳法
         """
         if number == 0:
